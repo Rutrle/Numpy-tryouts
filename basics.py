@@ -53,3 +53,45 @@ print(d3[0, 1, 1])
 d3[:, 1, :] = [[9, 9], [8, 8]]
 
 print(d3)
+print('_'*50 + 'initializing different type of arrays')
+a0 = np.zeros(2)
+print(a0)
+
+a0 = np.zeros((2, 3))
+print(a0)
+a0 = np.zeros((2, 3, 2), dtype='int32')
+print(a0)
+
+
+b1 = np.ones((4, 2, 2))
+print(b1)
+
+c3 = np.full((2, 2, 2), 99)
+print(c3)
+
+k = np.full_like(d3, 4)  # shape like d3 full of 4s
+
+print(k)
+
+r = np.random.rand(4, 2)
+
+print(r)
+
+rs = np.random.random_sample(k.shape)
+print(rs)
+
+ri = np.random.randint(7)  # only 1 number, from 0 to 7
+print(ri)
+
+
+ri2 = np.random.randint(7, size=(3, 3))
+print(ri2)
+
+ri3 = np.random.randint(-4, 7, size=(3, 3))
+print(ri3)
+
+i = np.identity(5)
+print(i)
+
+rep = np.repeat(ri3, 3, axis=1)
+print(rep)
