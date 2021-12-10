@@ -1,5 +1,7 @@
 import numpy as np
 
+# from https://www.youtube.com/watch?v=QUT1VHiLmmI
+
 
 def print_array_info(np_array, array_name):
     print(array_name, ':')
@@ -95,3 +97,17 @@ print(i)
 
 rep = np.repeat(ri3, 3, axis=1)
 print(rep)
+
+chall = np.zeros((5, 5), dtype='int32')
+chall[0, :] = 1
+chall[4, :] = 1
+chall[:, 0] = 1
+chall[:, 4] = 1
+chall[2, 2] = 9
+print(chall)
+
+# better solution
+chall2 = np.ones((5, 5), dtype='int32')
+chall2[1:-1, 1:-1] = 0
+chall2[2, 2] = 9
+print(chall2)
