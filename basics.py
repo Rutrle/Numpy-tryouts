@@ -136,4 +136,14 @@ print(np.matmul(a, b))
 c = np.identity(3)
 print(np.linalg.det(c))  # prints determinant
 
-print('_'*20 + 'statistics', '_'*20)
+print('_'*20 + 'statistics' + '_'*20)
+
+stats = np.array([[1, 2, 3], [4, 5, 6]])
+
+print(np.min(stats))
+print(np.min(stats, axis=1))
+
+print(np.max(stats))
+print(np.max(stats, axis=1))
+
+print(np.sum(stats))
