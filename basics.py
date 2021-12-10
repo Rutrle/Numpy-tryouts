@@ -111,3 +111,16 @@ chall2 = np.ones((5, 5), dtype='int32')
 chall2[1:-1, 1:-1] = 0
 chall2[2, 2] = 9
 print(chall2)
+
+print('_'*20 + 'mathematics', '_'*20)
+
+a = np.array([1, 2, 3, 4])
+print(a)
+
+print(a+2)  # the rest of operations is the same
+
+b = np.array([1, 0, 1, 0])
+
+print(a-b)
+print(a**b)
+print(np.sin(a))
