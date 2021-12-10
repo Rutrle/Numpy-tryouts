@@ -124,3 +124,16 @@ b = np.array([1, 0, 1, 0])
 print(a-b)
 print(a**b)
 print(np.sin(a))
+
+print('_'*20 + 'linear algebra', '_'*20)
+
+a = np.full((2, 3), 1)
+b = np.full((3, 2), 2)
+print(a, '\n', b)
+
+print(np.matmul(a, b))
+
+c = np.identity(3)
+print(np.linalg.det(c))  # prints determinant
+
+print('_'*20 + 'statistics', '_'*20)
